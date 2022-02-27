@@ -5,5 +5,3 @@ RUN apt update -y && apt upgrade -y && apt install -y wget && wget -O /root/ttyd
 COPY run.sh run.sh
 RUN chmod +x run.sh
 CMD ./run.sh
-#CMD ttyd -p 8989 -c yin2na:2327077 bash
-#CMD ["ttyd", "-c", "yin2na:2327077", "-p", "8989", "bash"]
